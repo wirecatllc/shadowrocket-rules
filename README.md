@@ -2,9 +2,14 @@
 
 ## Sources
 
-目前看到一些比较活跃的仓库
+[source.yaml](./source.yaml)
+
+### 主要收集以下仓库
 
 - SukkaW/Surge@gh-pages
+
+### 参考比较活跃的仓库
+
 - blackmatrix7/ios_rule_script@master
 - Hackl0us/SS-Rule-Snippet@main
 

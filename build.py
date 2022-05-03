@@ -12,7 +12,10 @@ def buildRule(rules, ruleSets):
         
         for file in ruleSets[name]["files"]:
             t = file['type']
-            link = getDownloadLink(file, "jsdelivr")
+            method = "jsdelivr"
+            if "download" in r:
+                method = r['download']
+            link = getDownloadLink(file, method)
             policy = None
             if "policy" in r:
                 policy = r['policy']

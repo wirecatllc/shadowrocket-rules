@@ -7,3 +7,10 @@ targets:
       - name: "sukka_telegram"
         policy: "PROXY"
       - name: "sukka_chnroute"
+  ad+chn-github:
+    rules:
+      - name: "sukka_ad"
+      - name: "sukka_telegram"
+        policy: "PROXY"
+        download: github
+      - name: "sukka_chnroute"
