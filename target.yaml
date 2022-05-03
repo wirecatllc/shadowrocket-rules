@@ -1,0 +1,8 @@
+working_directory: "build"
+targets:
+  ad+chn:
+    rules:
+      - name: "sukka_ad"
+      - name: "sukka_telegram"
+        policy: "PROXY"
+      - name: "sukka_chnroute"

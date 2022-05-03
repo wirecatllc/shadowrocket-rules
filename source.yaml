@@ -1,0 +1,64 @@
+source: 
+  sukka_ad:
+    files: 
+      - file: List/non_ip/reject.conf
+        type: RULE-SET
+        github:  
+          repo: SukkaW/Surge
+          branch: gh-pages
+        suggested_policy: reject-drop
+      - file: List/domainset/reject.conf
+        type: DOMAIN-SET
+        github:
+          repo: SukkaW/Surge
+          branch: gh-pages
+        suggested_policy: reject-tinygif
+      - file: List/ip/reject.conf
+        type: RULE-SET
+        github: 
+          repo: SukkaW/Surge
+          branch: gh-pages
+        suggested_policy: reject-drop
+    author: 
+      github: SukkaW
+    tags: ["adblock"]
+    description: https://github.com/SukkaW/Surge#%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA--%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4
+  sukka_telegram:
+    files:
+      - file: List/non_ip/telegram.conf
+        type: RULE-SET
+        github: 
+          repo: SukkaW/Surge
+          branch: gh-pages
+      - file: List/ip/telegram.conf
+        type: RULE-SET
+        github: 
+          repo: SukkaW/Surge
+          branch: gh-pages
+    author:
+      github: SukkaW
+    tags: ["telegram"]
+    description: https://github.com/SukkaW/Surge#telegram
+  sukka_chnroute:
+    files:
+      - file: List/ip/china_ip.conf
+        type: RULE-SET
+        suggested_policy: "DIRECT"
+        github: 
+          repo: SukkaW/Surge
+          branch: gh-pages
+    author:
+      github: SukkaW
+    tags: ["chnroute"]
+    description: https://github.com/SukkaW/Surge#chnroute-cidr
+  hackl0us_sr:
+    files:
+      - file: LAZY_RULES/Shadowrocket.conf
+        type: FULL-CONF
+        github: 
+          repo: Hackl0us/SS-Rule-Snippet
+          branch: main
+    author:
+      github: Hackl0us
+    tags: ["lazy"]
+    description: https://github.com/Hackl0us/SS-Rule-Snippet
