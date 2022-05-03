@@ -1,5 +1,9 @@
 # ShadowRocket Rules 整合
 
+## Download
+
+- [Sukka 去广告+Telegram代理+CHNROUTE](https://cdn.jsdelivr.net/gh/idogeteam/shadowrocket-rules@gh-pages/ad+chn+telegram.conf)
+
 ## Sources
 
 [source.yaml](./source.yaml)
