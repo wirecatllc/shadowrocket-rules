@@ -10,9 +10,9 @@ def buildRule(rules, ruleSets):
         if name not in ruleSets:
             raise KeyError("Rule {} cannot be find in global set".format(name))
         
-        for file in ruleSets[r]["files"]:
+        for file in ruleSets[name]["files"]:
             t = file['type']
-            link = getDownloadLink(file)
+            link = getDownloadLink(file, "jsdelivr")
             policy = None
             if "policy" in r:
                 policy = r['policy']
@@ -35,8 +35,8 @@ except yaml.YAMLError as exc:
 bd = target['build_directory']
 template = Path(target['base_template']).read_text()
 
-for n, v in target['targets']:
+for n, v in target['targets'].items():
     with open("{}/{}.conf".format(bd,n), "w") as f:
-        conf = template.format(buildRule(v['rules']))
+        conf = template.format(buildRule(v['rules'], source['source']))
         f.write(conf)
     
