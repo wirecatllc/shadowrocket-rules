@@ -1,4 +1,5 @@
-working_directory: "build"
+build_directory: "./build"
+base_template: "./conf/base.conf"
 targets:
   ad+chn:
     rules:

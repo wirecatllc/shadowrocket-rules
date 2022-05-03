@@ -17,4 +17,4 @@
 https://manual.nssurge.com/ <- 大部分似乎都一样  
 
 
-[manual.md](./manual.md)
+[部分内容](./docs/manual.md)
