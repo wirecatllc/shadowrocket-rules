@@ -1,13 +1,13 @@
 build_directory: "./build"
 base_template: "./conf/base.conf"
 targets:
-  ad+chn:
+  ad+chn+telegram:
     rules:
       - name: "sukka_ad"
       - name: "sukka_telegram"
         policy: "PROXY"
       - name: "sukka_chnroute"
-  ad+chn-github:
+  ad+chn-test-github:
     rules:
       - name: "sukka_ad"
       - name: "sukka_telegram"
